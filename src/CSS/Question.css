@@ -1,0 +1,159 @@
+.question_page {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+}
+.timer_header h1 {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+.timer_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.timer {
+  width: 60px;
+  height: 60px;
+  color: white;
+  border-radius: 50%;
+  background-color: #29545a;
+  display: inline-block;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes clock-load {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: scale(1);
+
+    transform: translateX(0);
+  }
+}
+.question_image {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.question_image img {
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px -1px;
+}
+.options_table {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.options_table li {
+  height: 42px;
+  background-color: #42b6c5;
+  margin-bottom: 10px;
+  box-shadow: 0 0 4px -1px black;
+  width: 75%;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.options_table li:hover {
+  background-color: #424e4e;
+}
+.timer_control {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  align-items: center;
+  animation: clock-load 500ms ease-out;
+  border: 3px solid #1d383b;
+  border-radius: 5px;
+  box-shadow: 0 0 5px -1px;
+  padding: 3px 5px;
+}
+.timer_control i {
+  font-size: 3.3rem;
+  color: #29545a;
+  cursor: pointer;
+}
+.options_table li > :first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 42px;
+  background-color: #1d383b;
+  color: white;
+  border-radius: 5px 0 0 5px;
+}
+.options_table li span:nth-child(2) {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+.score_data {
+  width: 200px;
+  height: 50px;
+  background-color: #12383d;
+  color: white;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.score_card {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body {
+  overflow: hidden;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 300px;
+  left: 45%;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #3a7780;
+  border-color: #3a7780 transparent #3a7780 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}

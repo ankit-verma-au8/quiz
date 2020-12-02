@@ -1,0 +1,44 @@
+.popup {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: black;
+}
+
+.popup_box h1 {
+  color: red;
+}
+.popup_box {
+  width: 50%;
+  height: 50%;
+  border: 8px solid #24575e;
+  background-color: white !important;
+  opacity: 1 !important;
+
+  border-radius: 8px;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fa-exclamation-triangle {
+  color: rgb(241, 80, 80);
+  font-size: 7rem;
+}
+.popup_box span {
+  font-size: 1.2rem;
+  padding: 8px 15px;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}

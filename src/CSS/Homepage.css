@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Mono:wght@300;400;500&display=swap");
+body {
+  background-image: url(../Images/quiz-bg-resize.png);
+  font-family: "Roboto Mono", monospace;
+  color: white;
+}
+h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 70px;
+}
+h3 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 30px;
+  margin-top: 20px;
+}
+img {
+  width: 550px;
+  height: 150px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.get-started span {
+  border: 1px white solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 3px 0px white;
+}
+.get-started {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.new1 {
+  width: 120px;
+}
+.date {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 4px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.date-real {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+p {
+  margin: 50px 300px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 300;
+  color: rgb(241, 241, 241);
+}
